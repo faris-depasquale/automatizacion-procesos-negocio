@@ -27,7 +27,7 @@ En días de promociones o alto volumen de compras, esto genera retrasos de varia
 ---
 
 ## 4. Archivos Adjuntos del Modelado BPMN
-* **Diagrama (imagen):** `proyecto-integrador/kickoff/diagrama-as-is-practica.png`  
+* **Diagrama (vectorial nítido):** `proyecto-integrador/kickoff/diagrama-as-is-practica.svg`  
 * **Modelo editable:** `proyecto-integrador/kickoff/diagrama-as-is-practica.bpmn`  
 
 ---
