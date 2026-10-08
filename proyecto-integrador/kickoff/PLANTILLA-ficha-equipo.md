@@ -1,41 +1,79 @@
-# Proyecto Integrador: Ficha de Kickoff (Individual)
+# Ficha de Equipo — Kickoff del Proyecto Integrador
 
-**Materia:** Automatización de Procesos de Negocio  
-**Módulo:** 2 - Herramientas, diseño e implementación de procesos automatizados  
-**Semana:** 3  
-
----
-
-## 1. Datos del Estudiante
-* **Nombre:** Faris De Pasquale  
-* **Modalidad:** Trabajo individual  
+**INF 320 Automatización de Procesos de Negocios · Semestre 2026-2**  
+*Completar en la Semana 3*
 
 ---
 
-## 2. Datos del Negocio Seleccionado
-* **Nombre de la empresa:** Panamá Tech Store  
-* **Tipo de negocio:** Tienda virtual de venta minorista orientada a componentes de computadoras, periféricos y accesorios tecnológicos. Gestiona compras por la página web y atención directa por WhatsApp, coordinando entregas locales en Ciudad de Panamá y envíos al interior del país.  
-* **Proceso seleccionado:** Flujo actual de recepción de pedidos, validación manual de pagos (ACH y Yappy) y coordinación de despacho con mensajería local.  
+## Datos del equipo
+
+| Campo | Información |
+| :--- | :--- |
+| **Nombre del equipo** | Panamá Tech Solutions |
+| **Integrante 1** | Faris De Pasquale · Cédula: 8-1029-65 · Email: depasuqalef16@gmail.com |
+
 
 ---
 
-## 3. Justificación del Problema
-Seleccioné este proceso porque actualmente depende de pasos manuales y repetitivos que frenan la operación. Cada vez que entra una orden, tengo que esperar a que el cliente mande la captura por WhatsApp, entrar a la banca en línea a revisar si el dinero de verdad cayó, cambiar el estado del pedido a mano en el sistema y luego copiar y pegar los datos de entrega en la plataforma del mensajero.
+## Negocio elegido
 
-En días de promociones o alto volumen de compras, esto genera retrasos de varias horas, pedidos que se quedan esperando atención innecesariamente y errores al momento de transcribir las direcciones de entrega.
+| Campo | Información |
+| :--- | :--- |
+| **Nombre del negocio** | Panamá Tech Store |
+| **Tipo de negocio** | Tienda virtual de comercio electrónico orientada a la venta minorista de componentes de computadoras, periféricos y accesorios tecnológicos. |
+| **¿Real o simulado?** | Simulado (basado en dinámicas reales de comercio local panameño) |
+| **Si es real: consentimiento del propietario** | No aplica (modelo simulado con fines estrictamente académicos) |
+| **Canal(es) de venta** | Sitio web propio y canal de atención/cierre de ventas por WhatsApp |
 
 ---
 
-## 4. Archivos Adjuntos del Modelado BPMN
-* **Diagrama (vectorial nítido):** `proyecto-integrador/kickoff/diagrama-as-is-practica.svg`  
-* **Modelo editable:** `proyecto-integrador/kickoff/diagrama-as-is-practica.bpmn`  
+## Proceso a intervenir
+
+| Campo | Información |
+| :--- | :--- |
+| **Nombre del proceso** | Proceso de Devolución de Pedido y Garantía |
+| **Descripción breve** | El proceso gestiona las solicitudes de devolución de clientes por fallas o inconformidad, verificando fotos de evidencia, coordinando la recepción física del producto en bodega para inspección técnica y ejecutando el reembolso económico si procede. Se ejecuta bajo demanda cada vez que un cliente reporta una incidencia postventa. |
+| **Actor(es) involucrado(s)** | Cliente, Atención al Cliente, Logística / Almacén. |
+| **Problema principal que tiene hoy** | Todo el triaje se realiza manualmente por chat y correo; la revisión física en almacén no está sincronizada con administración, lo que ocasiona demoras de hasta 4 a 6 días hábiles para responder o emitir un reembolso, generando reclamos y retrabajo en inventario. |
+| **¿Por qué es relevante automatizarlo?** | Estandariza la validación inicial de solicitudes, reduce drásticamente el tiempo de ciclo en las devoluciones, evita errores en el inventario de reingreso y mejora la confianza del cliente en las compras online. |
 
 ---
 
-## 5. Declaración de Uso de IA y Trazabilidad de Prompts
+## Distribución provisional de roles
 
-Para estructurar este kickoff y aterrizar el alcance del proceso de forma individual, utilicé asistencia de inteligencia artificial mediante el siguiente flujo de prompts sucesivos:
+| Integrante | Área de responsabilidad provisional |
+| :--- | :--- |
+| **Faris De Pasquale** | **BPMN y análisis del proceso** (diseño y documentación de flujos AS-IS y TO-BE). |
+| **Faris De Pasquale** | **Automatización (Zapier/Make/n8n)** (lógica de integración entre formularios y notificaciones). |
+| **Faris De Pasquale** | **Chatbot/IA conversacional** (captura inicial de datos de devolución e incidencias). |
+| **Faris De Pasquale** | **Marketing automation y KPIs** (medición de tiempos de resolución y satisfacción). |
+| **Faris De Pasquale** | **Seguridad, documentación y coordinación** (gestión del repositorio GitHub y control de versiones). |
 
-* **Prompt 1 (Exploración del caso):** *"Estoy desarrollando un proyecto individual de automatización de procesos para una materia universitaria. Necesito enfocarme en una tienda online de tecnología en Panamá que maneje cobros locales (Yappy, ACH). ¿Qué proceso operativo diario suele tener más fricción y pasos manuales?"*
-* **Prompt 2 (Delimitación del problema individual):** *"Voy a trabajar con el flujo de validación de pago y despacho. Ayúdame a listar los pasos típicos que realiza una persona sola encargada de la tienda para que el caso sea realista y viable de modelar en BPMN."*
-* **Prompt 3 (Ajuste de redacción y justificación):** *"Redacta la justificación del problema en primera persona, con tono directo y de estudiante universitario, explicando por qué hacer esa revisión manual de transferencias y copia de direcciones causa cuellos de botella reales en la entrega."*
+
+---
+
+## Declaración de integridad académica
+
+Declaro que:
+1. Este proyecto es un negocio simulado creado para fines académicos, modelado a partir de prácticas operativas comunes en el e-commerce local.
+2. Los datos de clientes utilizados son completamente ficticios y anonimizados.
+3. El uso de herramientas de IA generativa está declarado explícitamente a continuación.
+4. Comprendo y aplico la política de integridad académica del curso.
+
+**Firma:** Faris De Pasquale
+
+---
+
+## Declaración de Uso de IA y Trazabilidad de Prompts
+
+Para estructurar la ficha de kickoff, delimitar los límites del proceso y validar la consistencia del diagrama BPMN 2.0, se utilizó asistencia de inteligencia artificial mediante el siguiente flujo secuencial:
+
+* **Prompt 1 (Exploración del caso):** *"Necesito plantear un caso de estudio individual de automatización de procesos para una tienda online en Panamá. ¿Qué proceso postventa suele presentar mayores demoras manuales y problemas de coordinación entre atención y bodega?"*
+* **Prompt 2 (Estructuración del flujo y actores):** *"Voy a modelar el proceso de Devolución de Pedido. Define qué carriles (Lanes) debe tener para BPMN 2.0 y cuáles son los dos puntos críticos de decisión (compuertas exclusivas) que deben validarse antes del reembolso."*
+* **Prompt 3 (Adaptación a plantilla y roles individuales):** *"Adapta la plantilla oficial de kickoff del curso INF 320 para un único integrante, justificando la asunción de todos los roles técnicos y organizando las respuestas en las tablas requeridas."*
+
+---
+
+## Archivos Adjuntos del Modelado BPMN
+* **Diagrama (formato vectorial SVG):** `proyecto-integrador/kickoff/diagrama-as-is-practica.svg`
+* **Modelo fuente (BPMN 2.0 XML):** `proyecto-integrador/kickoff/diagrama-as-is-practica.bpmn`
