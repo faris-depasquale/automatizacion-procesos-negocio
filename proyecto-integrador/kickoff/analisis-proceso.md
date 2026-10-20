@@ -117,4 +117,3 @@ Declaro que este documento constituye un análisis operativo individual correspo
 1. *"Con base en el diagrama AS-IS modelado para Panamá Tech Store, redacta las respuestas a las 10 preguntas estándar de la entrevista al dueño del proceso, justificando tiempos de ciclo, herramientas y causas de atraso."*
 2. *"Completa la plantilla oficial de observación directa (walkthrough) desglosando los 8 pasos del proceso, los sistemas utilizados, los cuellos de botella y los indicadores operativos requeridos."*
 
-**Firma:** Faris De Pasquale
